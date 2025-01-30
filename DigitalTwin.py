@@ -23,8 +23,8 @@ np.random.seed(SEED)
 # Constants
 MAX_POINTS = 1000
 SCALER_PATH = 'scaler.pkl'
-MODEL_PATH = 'cnn_traffic_model.pth'
-DATA_PATH = 'packets_per_sec_analysis.csv'
+MODEL_PATH = './model/cnn_traffic_model.pth'
+DATA_PATH = './data/packets_per_sec_analysis.csv'
 
 class CNNModel(nn.Module):
     def __init__(self, window_size):
